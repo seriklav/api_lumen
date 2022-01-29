@@ -13,7 +13,7 @@
 |
 */
 
-$router->group(['prefix' => 'api'], function () use ($router){
+$router->group(['prefix' => 'api', 'namespace' => 'Api'], function () use ($router){
 	$router->group(['prefix' => 'v1', 'namespace' => 'V1'], function () use ($router){
 		$router->group(['prefix' => 'user'], function () use ($router){
 			$router->post('register', ['as' => 'user.register', 'uses' => 'AuthController@register']);

@@ -4,7 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use OpenApi\Annotations\Schema;
 
+/**
+ * @Schema(title="Company", type="object")
+ */
 class Company extends Model
 {
 	use HasFactory;

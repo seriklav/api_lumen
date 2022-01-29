@@ -1,0 +1,394 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Yellow-media laravel lumen",
+        "description": "This is documentation for Yellow-media laravel lumen project",
+        "contact": {
+            "name": "Sergey Lavrinyuk",
+            "email": "lavrinyuk.serik@gmail.comm"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost",
+            "description": "development environment"
+        }
+    ],
+    "paths": {
+        "/api/v1/user/sign-in": {
+            "post": {
+                "tags": [
+                    "authentication"
+                ],
+                "summary": "signIn method",
+                "operationId": "ab98c4f420764bd7eeea80520e542269",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "description": "User Email",
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "description": "User Password",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "202": {
+                        "description": "Normal Operational Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "example": "1"
+                                        },
+                                        "first_name": {
+                                            "type": "string",
+                                            "example": "First Name of user"
+                                        },
+                                        "last_name": {
+                                            "type": "string",
+                                            "example": "Last Name of user"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "example": "First Email of user"
+                                        },
+                                        "phone": {
+                                            "type": "string",
+                                            "example": "Phone of user"
+                                        },
+                                        "token": {
+                                            "type": "string",
+                                            "example": "Token of user"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/user/register": {
+            "post": {
+                "tags": [
+                    "authentication"
+                ],
+                "summary": "register method",
+                "operationId": "820080c96e3c7702853a0c4ab82fa818",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "first_name",
+                                    "last_name",
+                                    "email",
+                                    "phone",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "first_name": {
+                                        "description": "User First Name",
+                                        "type": "string"
+                                    },
+                                    "last_name": {
+                                        "description": "User Last Name",
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "description": "User Phone",
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "description": "User Email",
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "description": "User Password",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "202": {
+                        "description": "Normal Operational Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "example": "1"
+                                        },
+                                        "first_name": {
+                                            "type": "string",
+                                            "example": "First Name of user"
+                                        },
+                                        "last_name": {
+                                            "type": "string",
+                                            "example": "Last Name of user"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "example": "First Email of user"
+                                        },
+                                        "phone": {
+                                            "type": "string",
+                                            "example": "Phone of user"
+                                        },
+                                        "token": {
+                                            "type": "string",
+                                            "example": "Token of user"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/user/recover-password": {
+            "patch": {
+                "tags": [
+                    "authentication"
+                ],
+                "summary": "register method",
+                "operationId": "0605bdb0f34faf4f3c862e76c0065c9c",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "first_name",
+                                    "last_name",
+                                    "email",
+                                    "phone",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "first_name": {
+                                        "description": "User First Name",
+                                        "type": "string"
+                                    },
+                                    "last_name": {
+                                        "description": "User Last Name",
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "description": "User Phone",
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "description": "User Email",
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "description": "User Password",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "202": {
+                        "description": "Normal Operational Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "example": "1"
+                                        },
+                                        "first_name": {
+                                            "type": "string",
+                                            "example": "First Name of user"
+                                        },
+                                        "last_name": {
+                                            "type": "string",
+                                            "example": "Last Name of user"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "example": "First Email of user"
+                                        },
+                                        "phone": {
+                                            "type": "string",
+                                            "example": "Phone of user"
+                                        },
+                                        "token": {
+                                            "type": "string",
+                                            "example": "Token of user"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/user/companies": {
+            "get": {
+                "tags": [
+                    "companies"
+                ],
+                "summary": "get companies method",
+                "operationId": "e190f4f5d580e2627932dbb4edd24d67",
+                "responses": {
+                    "200": {
+                        "description": "Normal Operational Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "example": "1"
+                                                    },
+                                                    "title": {
+                                                        "type": "string",
+                                                        "example": "Name of company"
+                                                    },
+                                                    "phone": {
+                                                        "type": "string",
+                                                        "example": "Phone of company"
+                                                    },
+                                                    "description": {
+                                                        "type": "string",
+                                                        "example": "Description of company"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "companies"
+                ],
+                "summary": "created company method",
+                "operationId": "08189e30f06edec83256ab926debd118",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "phone",
+                                    "description"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "description": "Company title",
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "description": "Company phone",
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "description": "Company description",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Normal Operational Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "example": "1"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "Name of company"
+                                        },
+                                        "phone": {
+                                            "type": "string",
+                                            "example": "Phone of company"
+                                        },
+                                        "description": {
+                                            "type": "string",
+                                            "example": "Description of company"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ApiResponse": {
+                "description": "Response entity, response result uses this structure uniformly",
+                "properties": {
+                    "code": {
+                        "description": "response code",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "response result prompt",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "Company": {
+                "title": "Company",
+                "type": "object"
+            }
+        }
+    }
+}
