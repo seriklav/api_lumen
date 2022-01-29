@@ -8,7 +8,8 @@
 #Install
 - [x] git clone git@github.com:seriklav/api_lumen.git
 - [x] cd api_lumen
-- [x] *docker-compose up* - after you can use **sail** for example *"./vendor/bin/sail up -d"* or "./vendor/bin/sail composer update"
+- [x] **docker-compose exec laravel.test bash**
+- [x] **cp  .env.example .env**
 
 
 #Tasks
