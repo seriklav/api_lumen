@@ -8,6 +8,12 @@
 #Install
 - [x] git clone git@github.com:seriklav/api_lumen.git
 - [x] cd api_lumen
+- [x] docker run --rm \
+  -u "$(id -u):$(id -g)" \
+  -v $(pwd):/var/www/html \
+  -w /var/www/html \
+  laravelsail/php81-composer:latest \
+  composer install --ignore-platform-reqs
 - [x] **docker-compose exec laravel.test bash**
 - [x] **cp  .env.example .env**
 
