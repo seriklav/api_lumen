@@ -14,7 +14,7 @@
   -w /var/www/html \
   laravelsail/php81-composer:latest \
   composer install --ignore-platform-reqs
-- [x] **sail cp .env.example .env**
+- [x] **sail bash cp .env.example .env**
 
 
 #Tasks
