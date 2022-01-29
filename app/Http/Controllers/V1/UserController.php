@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
