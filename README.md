@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
 
 #Install
-- #Run on the docker
 - [x] git clone git@github.com:seriklav/api_lumen.git
 - [x] cd api_lumen
 - [x] *docker-compose up* - after you can use **sail** for example *"sail up -d"* or "sail composer require"
