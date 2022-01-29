@@ -13,22 +13,17 @@
 
 #Tasks
 - [x] Swagger documentation: http://localhost/api/documentation
-- [x] Login user
-- [x] Register user
-- [x] RecoveryPassword user
 - [x] Pivot table for company and user
-- [x] Method for create new company for user
-- [x] List of companies for user
 - [x] Unit Tests
 - [x] Postman Collections
 
 
 #Endpoints
-- [x] *Register request* **[POST]** - http://localhost/api/v1/user/register
-- [x] *Login in app* **[POST]** - http://localhost/api/v1/user/sign-in
-- [x] *Recover password* **[PATCH]** - http://localhost/api/v1/user/recover-password
-- [x] *Show all companies of users* **[GET]** - http://localhost/api/v1/user/companies
-- [x] *Created Company* **[POST]** - http://localhost/api/v1/user/companies
+- [x] *Register user* **[POST]** - http://localhost/api/v1/user/register
+- [x] *Login user* **[POST]** - http://localhost/api/v1/user/sign-in
+- [x] *RecoveryPassword user* **[PATCH]** - http://localhost/api/v1/user/recover-password
+- [x] *List of companies for user* **[GET]** - http://localhost/api/v1/user/companies
+- [x] *Method for create new company for user* **[POST]** - http://localhost/api/v1/user/companies
 
 
 #Postman collections
