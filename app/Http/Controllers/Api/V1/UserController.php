@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\ValidationException;
 use Laravel\Lumen\Http\ResponseFactory;
 use OpenApi\Annotations\Get;
 use OpenApi\Annotations\Items;

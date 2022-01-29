@@ -5,11 +5,15 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
 [![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
 
+#Install
+- #Run on the docker
+- [x] git clone git@github.com:seriklav/api_lumen.git
+- [x] cd api_lumen
+- [x] *docker-compose up* - after you can use **sail** for example *"sail up -d"* or "sail composer require"
+
 
 #Tasks
-- [x] Работа через docker и laravel командой sail
 - [x] Swagger documentation: http://localhost/api/documentation
-- [x] Versions of api
 - [x] Login user
 - [x] Register user
 - [x] RecoveryPassword user
@@ -30,6 +34,3 @@
 
 #Postman collections
 - [x] https://www.postman.com/collections/5a5d12e9e356ecb6367a
-
-#Run on the docker
- - *docker-compose up* - after you can use **sail** for example *"sail up -d"* or "sail composer require"

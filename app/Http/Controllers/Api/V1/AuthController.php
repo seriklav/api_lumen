@@ -176,7 +176,6 @@ class AuthController extends Controller
 
 		if ($user) {
 			$user->update(['password' => Hash::make(Str::random(6))]);
-			// Todo: send to email $user->email new password
 			return response()->json(['status' => 'success'], Response::HTTP_ACCEPTED);
 		}
 
