@@ -13,6 +13,22 @@
 |
 */
 
+use App\Http\Controllers\AuthController;
+
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+	return $router->app->version();
+});
+
+
+$router->group(['prefix' => 'api'], function () use ($router){
+	$router->group(['prefix' => 'user'], function () use ($router){
+		$router->post('register', ['as' => 'user.register', 'uses' => 'AuthController@register']);
+		$router->post('sign-in', ['as' => 'user.signIn', 'uses' => 'AuthController@signIn']);
+		$router->patch('recover-password', ['as' => 'user.recoveryPassword', 'uses' => 'AuthController@recoveryPassword']);
+
+		$router->group(['middleware' => 'auth'], function () use ($router) {
+			$router->get('companies', ['as' => 'user.companies', 'uses' => 'UserController@companies']);
+			$router->post('companies', ['as' => 'company.store', 'uses' => 'CompanyController@store']);
+		});
+	});
 });

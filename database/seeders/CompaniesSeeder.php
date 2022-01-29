@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Company;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class CompaniesSeeder extends Seeder
 {
 	/**
 	 * Run the database seeds.
@@ -13,9 +14,6 @@ class DatabaseSeeder extends Seeder
 	 */
 	public function run()
 	{
-		$this->call([
-			CompaniesSeeder::class,
-			UsersSeeder::class
-		]);
+		Company::factory(100)->create();
 	}
 }
