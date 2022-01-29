@@ -15,6 +15,7 @@
   laravelsail/php81-composer:latest \
   composer install --ignore-platform-reqs
 - [x] **sail bash cp .env.example .env**
+- [x] sail artisan migrate
 
 
 #Tasks
