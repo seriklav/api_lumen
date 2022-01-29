@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Laravel\Lumen\Http\ResponseFactory;
 use OpenApi\Annotations\Get;
 use OpenApi\Annotations\Items;
+use OpenApi\Annotations\SecurityScheme;
 use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends Controller
@@ -14,12 +15,22 @@ class UserController extends Controller
 	{
 		$this->middleware('auth');
 	}
-
+	/**
+	 * @OA\SecurityScheme(
+	 *     type="http",
+	 *     description="Use a token for auth request",
+	 *     name="Authorization",
+	 *     in="header",
+	 *     scheme="bearer",
+	 *     securityScheme="token",
+	 * )
+	 */
 	/**
 	 * @Get(
 	 * path="/api/v1/user/companies",
 	 * tags={"companies"},
 	 * summary="get companies method",
+	 * security={{"token":{}}},
 	 *      @\OpenApi\Annotations\Response(
 	 *         response="200",
 	 *         description="Normal Operational Response",
@@ -33,7 +44,7 @@ class UserController extends Controller
 	 *                      @OA\Property(property="phone", type="string", example="Phone of company"),
 	 *                      @OA\Property(property="description", type="string", example="Description of company")
 	 *                  )
-	 *              ),
+	 *              )
 	 *          )
 	 *     )
 	 * )

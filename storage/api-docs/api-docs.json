@@ -300,7 +300,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
             },
             "post": {
                 "tags": [
@@ -388,6 +393,19 @@
             "Company": {
                 "title": "Company",
                 "type": "object"
+            },
+            "User": {
+                "title": "User",
+                "type": "object"
+            }
+        },
+        "securitySchemes": {
+            "token": {
+                "type": "http",
+                "description": "Use a token for auth request",
+                "name": "Authorization",
+                "in": "header",
+                "scheme": "bearer"
             }
         }
     }
