@@ -62,7 +62,7 @@ class AuthController extends Controller
 
 		$user = User::where('email', $request->input('email'))->first();
 
-		if(Hash::check($request->input('password'), $user->password)){
+		if($user && Hash::check($request->input('password'), $user->password)){
 			return response()->json(['status' => 'success','token' => $user->token], Response::HTTP_ACCEPTED);
 		}
 
