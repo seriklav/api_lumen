@@ -8,7 +8,7 @@
 #Install
 - [x] git clone git@github.com:seriklav/api_lumen.git
 - [x] cd api_lumen
-- [x] *docker-compose up* - after you can use **sail** for example *"sail up -d"* or "sail composer require"
+- [x] *docker-compose up* - after you can use **sail** for example *"./vendor/bin/sail up -d"* or "./vendor/bin/sail composer require"
 
 
 #Tasks
