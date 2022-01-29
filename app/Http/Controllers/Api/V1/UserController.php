@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Auth;
 use Laravel\Lumen\Http\ResponseFactory;
 use OpenApi\Annotations\Get;
 use OpenApi\Annotations\Items;
-use OpenApi\Annotations\SecurityScheme;
 use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends Controller
