@@ -14,8 +14,7 @@
   -w /var/www/html \
   laravelsail/php81-composer:latest \
   composer install --ignore-platform-reqs
-- [x] **docker-compose exec laravel.test bash**
-- [x] **cp  .env.example .env**
+- [x] **sail cp .env.example .env**
 
 
 #Tasks
