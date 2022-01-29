@@ -33,4 +33,4 @@
 
 
 #Postman collections
-- [x] https://www.postman.com/collections/5a5d12e9e356ecb6367a
+- [x] https://documenter.getpostman.com/view/4732592/UVeCQTtT
