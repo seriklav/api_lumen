@@ -70,7 +70,7 @@
 <script src="{{ swagger_lume_asset('swagger-ui-bundle.js') }}"> </script>
 <script src="{{ swagger_lume_asset('swagger-ui-standalone-preset.js') }}"> </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function(){
+    window.onload = function() {
         // Build a system
         const ui = SwaggerUIBundle({
             dom_id: '#swagger-ui',
@@ -94,7 +94,7 @@
         })
 
         window.ui = ui
-    });
+    }
 </script>
 </body>
 
