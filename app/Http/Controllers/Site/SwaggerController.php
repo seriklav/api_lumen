@@ -22,7 +22,7 @@ use OpenApi\Annotations\Server;
  * )
  *
  * @Server(
- *     url="{config('app.url')}",
+ *     url="https://yellow-media-lumen.herokuapp.com/",
  *     description="development environment"
  * )
  *
