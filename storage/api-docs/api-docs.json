@@ -11,8 +11,12 @@
     },
     "servers": [
         {
-            "url": "http://localhost",
+            "url": "http://localhost/",
             "description": "development environment"
+        },
+        {
+            "url": "https://yellow-media-lumen.herokuapp.com/",
+            "description": "heroku environment"
         }
     ],
     "paths": {
