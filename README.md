@@ -35,4 +35,4 @@
 
 # URL's
 - [x] POSTMAMN: https://documenter.getpostman.com/view/4732592/UVeCQTtT
-- [x] HEROKU: https://lumen-tests.herokuapp.com/
+- [x] HEROKU: https://yellow-media-lumen.herokuapp.com/api/documentation
