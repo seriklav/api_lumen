@@ -33,5 +33,6 @@
 - [x] *Method for create new company for user* **[POST]** - http://localhost/api/v1/user/companies
 
 
-#Postman collections
-- [x] https://documenter.getpostman.com/view/4732592/UVeCQTtT
+# URL's
+- [x] POSTMAMN: https://documenter.getpostman.com/view/4732592/UVeCQTtT
+- [x] HEROKU: https://lumen-tests.herokuapp.com/
