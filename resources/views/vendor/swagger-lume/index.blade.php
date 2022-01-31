@@ -75,7 +75,7 @@
         const ui = SwaggerUIBundle({
             dom_id: '#swagger-ui',
 
-            url: "{!! $urlToDocs !!}",
+            url: "{!! config('app.env') !== 'local' ? str_replace("http://", "https://", $urlToDocs) : $urlToDocs !!}",
             operationsSorter: {!! isset($operationsSorter) ? '"' . $operationsSorter . '"' : 'null' !!},
             configUrl: {!! isset($additionalConfigUrl) ? '"' . $additionalConfigUrl . '"' : 'null' !!},
             validatorUrl: {!! isset($validatorUrl) ? '"' . $validatorUrl . '"' : 'null' !!},
