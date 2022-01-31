@@ -22,7 +22,7 @@ use OpenApi\Annotations\Server;
  * )
  *
  * @Server(
- *     url="APP_URL",
+ *     url="{config('app.url')}",
  *     description="development environment"
  * )
  *
