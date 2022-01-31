@@ -23,9 +23,7 @@ use OpenApi\Annotations\Server;
  *
  * @Server(
  *     url="http://localhost/",
- *     description="development environment"
- * )
- * @Server(
+ *     description="development environment",
  *     url="https://yellow-media-lumen.herokuapp.com/",
  *     description="heroku environment"
  * )
