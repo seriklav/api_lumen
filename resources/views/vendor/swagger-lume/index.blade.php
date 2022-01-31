@@ -67,8 +67,8 @@
 
 <div id="swagger-ui"></div>
 
-<script src="{{ str_replace("http://", "https://", swagger_lume_asset('swagger-ui-bundle.js')) }}"> </script>
-<script src="{{ str_replace("http://", "https://", swagger_lume_asset('swagger-ui-standalone-preset.js')) }}"> </script>
+<script src="{{ swagger_lume_asset('swagger-ui-bundle.js') }}"> </script>
+<script src="{{ swagger_lume_asset('swagger-ui-standalone-preset.js') }}"> </script>
 <script>
     document.addEventListener("DOMContentLoaded", function(){
         // Build a system
