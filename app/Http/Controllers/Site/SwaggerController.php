@@ -22,7 +22,7 @@ use OpenApi\Annotations\Server;
  * )
  *
  * @Server(
- *     url="http://localhost",
+ *     url="APP_URL",
  *     description="development environment"
  * )
  *
